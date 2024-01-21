@@ -121,7 +121,8 @@ if __name__ == "__main__":
 
 
     set_seed(2021)
-    filename = '../datasets/processed_ta-feng_data.csv'
+    # drop unnecessary columns in original dataset
+    filename = 'processed_ta-feng_data.csv'
     filename1 = "processed_ta-feng/ratings_after_step0.dat"
     step0(filename, filename1)
     step1(filename1)
