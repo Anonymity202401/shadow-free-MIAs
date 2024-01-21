@@ -6,9 +6,11 @@ import numpy as np
 # using Beauty target dataset, recommender model Bert4Rec
 
 
-pathS = "../../../recommender/BERT4Rec-Pytorch-master/mydata/processed"
+# pathS = "../../../recommender/BERT4Rec-Pytorch-master/mydata/processed/"
 Vpath = "../../../dataprocess/Vectorized_itemEmbed"
 path = "../../../dataprocess/processed_amazon/"
+
+pathS = ""
 
 num_latent = 100
 
@@ -31,9 +33,9 @@ for line in fr_vector_shadow.readlines():
 
 print("finished1")
 
-#--------------------------getting baseline recommendations from shadow model--------------------------
-# getting vectors for baseline recommendations from shadow models
-filePath = pathS + "/beauty_Tmember"
+
+
+filePath = pathS + "beauty_Tmember"
 data = pd.read_csv(filePath, sep=',', header = None, low_memory=False, skiprows=1)
 # print(data.head())
 data.columns = ['SessionID', 'ItemID', 'Rating', 'Time']
@@ -60,10 +62,8 @@ vector_shadow_baseline_recommend = temp_vector/count
 print("finished2")
 
 
-#--------------------------shadow--------------------------
-# read recommendations for shadow members
-# Smember_rec = open(pathS + "/ml-1m_Smember_recommendations", 'r')
-Smember_rec = open(pathS + "/beauty_Tmember_recommendations", 'r')
+
+Smember_rec = open(pathS + "beauty_Tmember_recommendations", 'r')
 recommend_Smember = {}
 for line in Smember_rec.readlines():
     line = line.split('\t')
@@ -75,7 +75,7 @@ for line in Smember_rec.readlines():
 
 
 # read recommendations for shadow non-members
-Snonmem_rec = open(pathS + "/beauty_Tnonmem_recommendation", 'r')
+Snonmem_rec = open(pathS + "beauty_Tnonmem_recommendation", 'r')
 recommend_Snonmem = {}
 for line in Snonmem_rec.readlines():
     line = line.split('\t')
@@ -86,8 +86,8 @@ for line in Snonmem_rec.readlines():
 
 
 # read interactions for shadow members and shadow non-members
-itm = open(pathS + "/beauty_Tmember_train", 'r')
-itn = open(pathS + "/beauty_Tnonmem_train", 'r')
+itm = open(pathS + "beauty_Tmember_train", 'r')
+itn = open(pathS + "beauty_Tnonmem_train", 'r')
 
 
 interaction_Smember = {}  # interactions for shadow_member
