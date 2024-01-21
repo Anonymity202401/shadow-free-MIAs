@@ -15,9 +15,13 @@ The experiments are evaluated on three benchmark datasets, i.e., MovieLens-1M, A
 
 # Recommender System
 * Traditional recommender system
-  * For Item-based Collaborative Filtering
+  * For Item-based Collaborative Filtering(ICF)
 * Advanced deep learning based recommender systems
-  *
+  * NCF
+  * BERT4Rec
+  * Caser
+  * GRU4Rec
+
 
 # Get started
 The following command can be used to train shadow-free MIAs for both traditional recommender systems and advanced deep learning based recommender systems:
