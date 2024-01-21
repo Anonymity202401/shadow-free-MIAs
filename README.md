@@ -9,7 +9,9 @@ This respository contains the source code of the paper "Shadow-Free Membership I
 
 # Dataset
 The experiments are evaluated on three benchmark datasets, i.e., MovieLens-1M, Amazon Beauty, and Ta-feng. 
-* For MovieLens-1M, Amazon Beauty, and Ta-feng, please firstly download them from here, here, here. And put them into the path "/dataprocess/"
+* For MovieLens-1M, download dataset from [here](https://grouplens.org/datasets/movielens/1m/), then put it into the path "/dataprocess/"
+* For Amazon Beauty, download dataset from [here](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews), then put it into the path "/dataprocess/"
+* For Ta-feng, download dataset from [here](https://www.kaggle.com/datasets/chiranjivdas09/ta-feng-grocery-dataset), then put it into the path "/dataprocess/"
 
 
 # Get started
