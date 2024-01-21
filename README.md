@@ -15,3 +15,8 @@ The experiments are evaluated on three benchmark datasets, i.e., MovieLens-1M, A
 
 
 # Get started
+The following command can be used to train shadow-free MIAs for both traditional recommender systems and advanced deep learning based recommender systems:
+```
+cd attack/SFMD/attackModel/
+python beauty_Bert4Rec.py
+```
