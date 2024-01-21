@@ -141,7 +141,7 @@ if __name__ == "__main__":
 
 
     set_seed(2021)
-    filename = "ml-1m/ratings.dat"
+    filename = "ratings.dat"
     filename1 = "processed_movielens/ratings_after_step0.dat"
     step0(filename, filename1)
     step1(filename1)
