@@ -13,6 +13,11 @@ The experiments are evaluated on three benchmark datasets, i.e., MovieLens-1M, A
 * For Amazon Beauty, download dataset from [here](https://cseweb.ucsd.edu/~jmcauley/datasets.html#amazon_reviews), then put it into the path "/dataprocess/"
 * For Ta-feng, download dataset from [here](https://www.kaggle.com/datasets/chiranjivdas09/ta-feng-grocery-dataset), then put it into the path "/dataprocess/"
 
+# Recommender System
+* Traditional recommender system
+  * For Item-based Collaborative Filtering
+* Advanced deep learning based recommender systems
+  *
 
 # Get started
 The following command can be used to train shadow-free MIAs for both traditional recommender systems and advanced deep learning based recommender systems:
