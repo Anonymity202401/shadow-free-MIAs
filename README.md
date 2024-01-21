@@ -15,7 +15,7 @@ The experiments are evaluated on three benchmark datasets, i.e., MovieLens-1M, A
 
 # Recommender System
 * Traditional recommender system
-  * For Item-based Collaborative Filtering(ICF), follow [this link](https://librecommender.readthedocs.io/en/latest/tutorial.html) to implement ICF.
+  * For Item-based Collaborative Filtering(ICF), follow this [link](https://librecommender.readthedocs.io/en/latest/tutorial.html) to implement ICF.
 * Advanced deep learning based recommender systems
   * NCF, follow this [link](https://librecommender.readthedocs.io/en/latest/tutorial.html) to implement NCF.
   * BERT4Rec, follow this [link](https://github.com/WZH-NLP/DL-MIA-KDD-2022/tree/main/DL-MIA-SR/Recommender/BERT4Rec-Pytorch-master) to implement BERT4Rec.
