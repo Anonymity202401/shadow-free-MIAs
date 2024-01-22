@@ -35,7 +35,7 @@ print("finished1")
 
 
 
-filePath = pathS + "beauty_Tmember"
+filePath = pathS + "beauty_Tmember_train"
 data = pd.read_csv(filePath, sep=',', header = None, low_memory=False, skiprows=1)
 # print(data.head())
 data.columns = ['SessionID', 'ItemID', 'Rating', 'Time']
